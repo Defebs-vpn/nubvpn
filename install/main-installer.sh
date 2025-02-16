@@ -236,7 +236,7 @@ show_progress "Generating SSL certificate"
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout /etc/nubvpn/cert/privkey.pem \
     -out /etc/nubvpn/cert/fullchain.pem \
-    -subj "/C=ID/ST=DKI Jakarta/L=Jakarta/O=NUBVPN/CN=nubvpn.com"
+    -subj "/C=ID/ST=DKI Jakarta/L=Jakarta/O=sc/CN=defebs-vpn.my.id"
 check_status "SSL certificate generation"
 
 # Copy management scripts
