@@ -1,0 +1,28 @@
+{
+  "inbounds": [
+    {
+      "port": 2087,
+      "protocol": "trojan",
+      "settings": {
+        "clients": [],
+        "fallbacks": [
+          {
+            "dest": 80
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/nubvpn/cert/fullchain.pem",
+              "keyFile": "/etc/nubvpn/cert/privkey.pem"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

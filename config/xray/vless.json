@@ -1,0 +1,35 @@
+{
+  "inbounds": [
+    {
+      "port": 443,
+      "protocol": "vless",
+      "settings": {
+        "clients": [],
+        "decryption": "none",
+        "fallbacks": [
+          {
+            "dest": 80
+          }
+        ]
+      },
+      "streamSettings": {
+        "network": "ws",
+        "security": "tls",
+        "tlsSettings": {
+          "certificates": [
+            {
+              "certificateFile": "/etc/nubvpn/cert/fullchain.pem",
+              "keyFile": "/etc/nubvpn/cert/privkey.pem"
+            }
+          ]
+        },
+        "wsSettings": {
+          "path": "/vless",
+          "headers": {
+            "Host": ""
+          }
+        }
+      }
+    }
+  ]
+}
